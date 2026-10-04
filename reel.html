@@ -63,7 +63,7 @@
   if (p.get('hook')) document.getElementById('hook').innerHTML = fmt(p.get('hook'));
   if (p.get('cta')) document.getElementById('cta').innerHTML = fmt(p.get('cta')).replace(/<em>/g, '<b>').replace(/<\/em>/g, '</b>');
   if (p.has('semdica')) document.getElementById('hint').remove();
-  const vel = parseFloat(p.get('vel')) || 0.28;
+  const vel = parseFloat(p.get('vel')) || 0.38;
   const site = document.getElementById('site');
   site.src = './?gravar&vel=' + vel;
   const fit = () => { const w = document.getElementById('screen').clientWidth; site.style.transform = 'scale(' + (w / 1100) + ')'; };
