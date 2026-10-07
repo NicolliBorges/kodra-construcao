@@ -1,0 +1,100 @@
+<!doctype html>
+<html lang="pt-BR">
+<head>
+<meta charset="utf-8">
+<meta name="viewport" content="width=device-width, initial-scale=1">
+<title>Kodra | Recebemos seu pedido</title>
+<meta name="robots" content="noindex">
+<meta name="theme-color" content="#0a0e0c">
+<link rel="icon" href="data:image/svg+xml,%3Csvg xmlns='http://www.w3.org/2000/svg' viewBox='0 0 88 88'%3E%3Crect width='88' height='88' rx='18' fill='%230a0e0c'/%3E%3Crect x='12' y='52' width='14' height='24' fill='%2342AD73'/%3E%3Crect x='37' y='34' width='14' height='42' fill='%2342AD73'/%3E%3Crect x='62' y='12' width='14' height='64' fill='%2342AD73'/%3E%3C/svg%3E">
+
+<!-- GOOGLE ADS: cole aqui a tag do Google (gtag.js) quando o Google Ads fornecer o ID da conta (AW-...). -->
+
+<style>
+  @font-face {
+    font-family: "Outfit Variable"; font-style: normal; font-display: swap; font-weight: 100 900;
+    src: url(/assets/outfit-latin-wght-normal-Bc-8i84L.woff2) format("woff2-variations");
+  }
+  :root { --bg: #0a0e0c; --panel: #121a16; --line: #ffffff14; --text: #eef3ef; --muted: #8e9b93; --green: #42ad73; --green2: #7fe0aa; }
+  * { box-sizing: border-box; }
+  html, body { margin: 0; min-height: 100%; }
+  body {
+    min-height: 100vh; min-height: 100svh; display: flex; align-items: center; justify-content: center; padding: 24px 16px;
+    font-family: "Outfit Variable", system-ui, -apple-system, "Segoe UI", sans-serif; font-size: 17px; line-height: 1.55;
+    color: var(--text); -webkit-font-smoothing: antialiased;
+    background:
+      radial-gradient(70% 45% at 50% 0%, rgba(66, 173, 115, .28), transparent 70%),
+      radial-gradient(50% 40% at 90% 100%, rgba(20, 90, 60, .45), transparent 70%),
+      var(--bg);
+  }
+  .card {
+    width: 100%; max-width: 520px; text-align: center; padding: 40px 28px 32px;
+    background: var(--panel); border: 1px solid var(--line); border-radius: 24px;
+    box-shadow: 0 30px 80px -30px rgba(0, 0, 0, .8);
+  }
+  .logo { display: inline-flex; align-items: center; gap: 10px; font-weight: 700; font-size: 20px; letter-spacing: .02em; margin-bottom: 28px; }
+  .logo svg { width: 26px; height: 26px; }
+  .check {
+    width: 72px; height: 72px; margin: 0 auto 22px; border-radius: 50%; display: grid; place-items: center;
+    background: rgba(66, 173, 115, .14); border: 1.5px solid rgba(127, 224, 170, .45);
+  }
+  .check svg { width: 34px; height: 34px; }
+  .check path { stroke-dasharray: 40; stroke-dashoffset: 40; animation: draw .5s .15s ease-out forwards; }
+  @keyframes draw { to { stroke-dashoffset: 0; } }
+  h1 { margin: 0 0 10px; font-size: clamp(26px, 6vw, 32px); line-height: 1.15; font-weight: 700; }
+  p { margin: 0 auto; max-width: 400px; color: var(--muted); }
+  .bar { height: 4px; margin: 26px auto 24px; max-width: 260px; border-radius: 4px; background: #ffffff14; overflow: hidden; }
+  .bar i { display: block; height: 100%; width: 0; background: linear-gradient(90deg, var(--green), var(--green2)); animation: fill 2s linear forwards; }
+  @keyframes fill { to { width: 100%; } }
+  .btn {
+    display: inline-flex; align-items: center; justify-content: center; gap: 10px; height: 54px; padding: 0 26px; width: 100%;
+    font: inherit; font-size: 16px; font-weight: 600; text-decoration: none; white-space: nowrap; border-radius: 14px;
+    background: var(--green); color: #06140c; box-shadow: 0 10px 40px -12px #42ad73cc;
+  }
+  .btn:hover { background: var(--green2); }
+  .btn svg { width: 20px; height: 20px; }
+  .back { display: inline-block; margin-top: 18px; font-size: 15px; color: var(--muted); text-decoration: none; }
+  .back:hover { color: var(--text); }
+  @media (prefers-reduced-motion: reduce) { .check path, .bar i { animation: none; stroke-dashoffset: 0; width: 100%; } }
+</style>
+</head>
+<body>
+  <main class="card">
+    <div class="logo">
+      <svg viewBox="0 0 88 88" aria-hidden="true"><rect x="12" y="52" width="14" height="24" fill="#42AD73"/><rect x="37" y="34" width="14" height="42" fill="#42AD73"/><rect x="62" y="12" width="14" height="64" fill="#42AD73"/></svg>
+      Kodra
+    </div>
+    <div class="check" aria-hidden="true">
+      <svg viewBox="0 0 24 24" fill="none" stroke="#7fe0aa" stroke-width="2.5" stroke-linecap="round" stroke-linejoin="round"><path d="M4.5 12.5l5 5L19.5 7"/></svg>
+    </div>
+    <h1>Recebemos seu pedido!</h1>
+    <p id="msg">Estamos te levando para o WhatsApp para falar com o nosso time&hellip;</p>
+    <div class="bar" aria-hidden="true"><i></i></div>
+    <a class="btn" id="wa" href="https://wa.me/5511982056102" rel="noopener">
+      <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2.2" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true"><path d="M12 3a9 9 0 0 0-7.8 13.5L3 21l4.6-1.2A9 9 0 1 0 12 3z"/></svg>
+      Abrir o WhatsApp agora
+    </a>
+    <br>
+    <a class="back" href="/">&larr; Voltar para o site</a>
+  </main>
+
+<script>
+  // Página de conversão: o visitante chega aqui ao clicar em um botão de WhatsApp do site.
+  // A mensagem pré-preenchida vem no # da URL (ex.: /obrigado#Ol%C3%A1!...), assim a URL
+  // da página continua sendo sempre /obrigado para o Google Ads.
+  (function () {
+    var NUMERO = "5511982056102";
+    var PADRAO = 'Olá! Vi a página "Veja um site nascer" da Kodra e quero um site para o meu negócio.';
+    var texto = PADRAO;
+    try {
+      var h = decodeURIComponent(location.hash.slice(1)).trim();
+      if (h) texto = h.slice(0, 500);
+    } catch (e) {}
+    var url = "https://wa.me/" + NUMERO + "?text=" + encodeURIComponent(texto);
+    document.getElementById("wa").href = url;
+    // 2 segundos: tempo para a tag do Google registrar a visita antes de sair da página.
+    setTimeout(function () { location.replace(url); }, 2000);
+  })();
+</script>
+</body>
+</html>
